@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="Resume" content="Sally Student's Resume">
+    <title>Sally Student's Resume</title>
+    <!-- <link href="style.css" rel="stylesheet" type="text/css" /> -->
+</head>
+
+<body>
+    <header style="text-align:center">Sally Student </header>
+    <main id="application-root">
+
+    </main>
+
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js">
+    </script>
+    <script src="https://unpkg.com/react@16/umd/react.development.js">
+    </script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js">
+    </script>
+    <script type="text/babel">
+
+
+    // Our code will go here
+    // const helloWorldH1 = React.createElement('h1', null, 'Hello, world!');
+    // const helloWorldH1 = <h1>Hello, world!</h1>;
+    // ReactDOM.render(helloWorldH1, appRoot);
+
+//     ReactDOM.render(
+//     <div>
+//       <h1>Hello, world!</h1>
+//       <p>How are you today?</p>
+//       <h2>Look what React can do!</h2>
+//     </div>,
+//     document.querySelector('#application-root')
+//   );
+
+    // App Component
+// function App() {
+//   return (
+//     <div>
+//       <h1>Hello, everyone!</h1>
+//       <p>We think,</p>
+//       <ul>
+//         <li>React</li>
+//         <li>is</li>
+//         <li>brilliant!</li>
+//       </ul>
+//     </div>
+//   );
+// };
+
+// // Use App Component:
+// // insert the App's element tree into the #application-root
+// ReactDOM.render(
+//   <App />,
+//   document.querySelector('#application-root')
+// );
+
+// function App() {
+//     return (
+//     <span id='app-id' className='app-class'>
+//       My App
+//     </span>
+//   );
+// }
+
+// ReactDOM.render(
+//   <App />,
+//   document.querySelector('#application-root')
+// );
+
+function App(props) {
+  console.log(props)
+  return (
+  <div className='app-class'>
+    <address label="address">
+    10 Campus Drive, Boston, MA <br/>
+    +1 (617)-777-9999
+    </address>
+    <img src="http://ia.media-imdb.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_UX214_CR0,0,214,317_AL_.jpg" alt="picture of ilana from broad city"/>
+
+    <section label="education & work experience">
+        <section label="education">
+        <h1>Education</h1>
+        <ul>Boston College 2016</ul>
+        </section>
+
+        
+        <h1>Employment History</h1>
+
+        <article>
+        <ul>Product Manager, Bloc (April 2016-Present)</ul>
+        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat.</li>
+
+        </article>
+
+        <article>
+        <ul>Business Analyst, Google (September 2012-February 2016)</ul>
+        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat.</li>
+
+        </article>
+    </section>
+  </div>
+  );
+}
+
+ReactDOM.render(
+<App
+className='div-class'
+img_src="http://ia.media-imdb.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_UX214_CR0,0,214,317_AL_.jpg"
+/>,
+document.querySelector('#application-root')
+);
+
+
+
+  </script>
+</body>
+
+</html>
